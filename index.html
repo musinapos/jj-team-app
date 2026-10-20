@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JJ TEAM - JoJo Cleaning Services</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+  body{background:#f4f4f4;color:#0a3448}
+  header{background:#0a3448;color:#fff;text-align:center;padding:20px}
+  header h1{font-size:42px;letter-spacing:2px}
+  header p{color:#d4a93c;font-weight:bold;font-size:18px}
+  .badge{background:#0a3448;color:#fff;text-align:center;padding:10px;font-weight:bold}
+  .container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:20px}
+  .room{background:#fff;border-radius:16px;overflow:hidden;width:350px;box-shadow:0 4px 15px rgba(0,0,0,.15)}
+  .room img{width:100%;height:260px;object-fit:cover}
+  .room h2{text-align:center;background:#0a3448;color:#fff;padding:12px}
+  .room.garden h2{background:#1a7a3c}
+  .room.spring h2{background:#123a5a}
+  .note{text-align:center;padding:10px;font-weight:bold;font-size:14px}
+  .garden .note{background:#e8b21a;color:#000}
+  .spring .note{background:#0a6ec5;color:#fff}
+  .services{padding:15px}
+  .service{display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid #eee}
+  .service b{font-size:16px}
+  .price{font-size:20px;font-weight:900;color:#0a3448}
+  .btn{display:block;width:90%;margin:15px auto;background:#1a7a3c;color:#fff;text-align:center;padding:12px;border-radius:8px;text-decoration:none;font-weight:bold}
+  .contact{background:#fff;text-align:center;padding:20px;margin:20px;border-radius:12px;font-weight:bold}
+  .contact a{color:#1a7a3c;font-size:22px;text-decoration:none}
+  .admin{max-width:800px;margin:20px auto;background:#fff;padding:20px;border-radius:12px}
+  .admin h3{text-align:center;margin-bottom:10px}
+  .admin input{width:100%;padding:10px;margin:5px 0;border:1px solid #ccc;border-radius:6px}
+  footer{background:#0a3448;color:#fff;text-align:center;padding:15px;font-weight:bold}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>JJ TEAM</h1>
+  <p>JoJo Cleaning Services</p>
+  <div style="font-size:13px;margin-top:5px">Garden • Spring Cleaning • High Windows</div>
+</header>
+<div class="badge">PROFESSIONAL • RELIABLE • ECO-FRIENDLY CLEANING SERVICES</div>
+
+<div class="contact">
+  📞 Contact Us: <a href="tel:+27763574601">076 357 4601</a><br>
+  💬 WhatsApp: <a href="https://wa.me/27763574601?text=Hi%20JJ%20Team,%20I%20want%20to%20book">Chat on WhatsApp</a>
+</div>
+
+<div class="container">
+
+  <!-- ROOM 1: JOJO -->
+  <div class="room">
+    <img src="jojo.jpg" alt="JoJo Tank Cleaning">
+    <h2>JoJo Tank Cleaning</h2>
+    <div class="services">
+      <div class="service"><b>1000L Tank</b><span class="price" data-price="jojo1000">R350</span></div>
+      <div class="service"><b>2500L Tank</b><span class="price" data-price="jojo2500">R700</span></div>
+      <div class="service"><b>5000L Tank</b><span class="price" data-price="jojo5000">R1100</span></div>
+      <div class="service"><b>10000L Tank</b><span class="price" data-price="jojo10000">R1600</span></div>
+      <div class="service"><b>Monthly - Small</b><span class="price" data-price="jojoMonthlySmall">R150</span></div>
+      <div class="service"><b>Monthly - Large</b><span class="price" data-price="jojoMonthlyLarge">R250</span></div>
+    </div>
+    <a class="btn" href="https://wa.me/27763574601?text=Hi%20JJ%20Team,%20I%20want%20JoJo%20Cleaning">Book on WhatsApp</a>
+  </div>
+
+  <!-- ROOM 2: GARDEN -->
+  <div class="room garden">
+    <img src="garden.jpg" alt="Garden Service">
+    <h2>Garden Service</h2>
+    <div class="note">NOT Ordinary Garden Service - We use Top Quality Chemicals, Pest Control Spraying, Safety PPE</div>
+    <div class="services">
+      <div class="service"><b>Grass & Garden</b><span class="price" data-price="gardenGrass">From R300</span></div>
+      <div class="service"><b>Tree Cutting / Pruning</b><span class="price" data-price="gardenTree">R455</span></div>
+      <div class="service"><b>Garden Bundle</b><span class="price" data-price="gardenBundle">From R500</span></div>
+    </div>
+    <a class="btn" href="https://wa.me/27763574601?text=Hi%20JJ%20Team,%20I%20want%20Garden%20Service">Book on WhatsApp</a>
+  </div>
+
+  <!-- ROOM 3: SPRING -->
+  <div class="room spring">
+    <img src="spring.jpg" alt="Spring Cleaning">
+    <h2>Spring Cleaning</h2>
+    <div class="note">NOT Ordinary Cleaners - We Renew Your Home using Top Quality Chemicals, Pest Control, Safety PPE</div>
+    <div class="services">
+      <div class="service"><b>Spring Cleaning</b><span class="price" data-price="springClean">From R600</span></div>
+      <div class="service"><b>High Windows</b><span class="price" data-price="springWindows">From R400</span></div>
+      <div class="service"><b>Pressure Washing</b><span class="price" data-price="springPressure">From R500</span></div>
+    </div>
+    <a class="btn" href="https://wa.me/27763574601?text=Hi%20JJ%20Team,%20I%20want%20Spring%20Cleaning">Book on WhatsApp</a>
+  </div>
+
+</div>
+
+<!-- ADMIN PANEL - EDITABLE PRICES -->
+<div class="admin" id="admin">
+  <h3>🔧 ADMIN - Edit Selling Prices (Only You)</h3>
+  <p style="text-align:center;font-size:13px">Change a price here and it updates in the app instantly. Layout does NOT change.</p>
+  <label>JoJo 1000L</label><input id="edit-jojo1000" value="350">
+  <label>JoJo 2500L</label><input id="edit-jojo2500" value="700">
+  <label>JoJo 5000L</label><input id="edit-jojo5000" value="1100">
+  <label>JoJo 10000L</label><input id="edit-jojo10000" value="1600">
+  <label>Monthly Small</label><input id="edit-jojoMonthlySmall" value="150">
+  <label>Monthly Large</label><input id="edit-jojoMonthlyLarge" value="250">
+  <label>Garden Grass</label><input id="edit-gardenGrass" value="300">
+  <label>Tree</label><input id="edit-gardenTree" value="455">
+  <label>Garden Bundle</label><input id="edit-gardenBundle" value="500">
+  <label>Spring Cleaning</label><input id="edit-springClean" value="600">
+  <label>High Windows</label><input id="edit-springWindows" value="400">
+  <label>Pressure Washing</label><input id="edit-springPressure" value="500">
+  <button onclick="savePrices()" style="width:100%;padding:12px;background:#0a3448;color:#fff;border:none;border-radius:8px;font-weight:bold;margin-top:10px">SAVE PRICES</button>
+</div>
+
+<footer>JJ TEAM • JoJo Cleaning Services • Call/WhatsApp: 076 357 4601</footer>
+
+<script>
+const defaultPrices = {
+  jojo1000:350, jojo2500:700, jojo5000:1100, jojo10000:1600,
+  jojoMonthlySmall:150, jojoMonthlyLarge:250,
+  gardenGrass:300, gardenTree:455, gardenBundle:500,
+  springClean:600, springWindows:400, springPressure:500
+};
+let prices = JSON.parse(localStorage.getItem('jj_prices')) || defaultPrices;
+function renderPrices(){
+  document.querySelectorAll('[data-price]').forEach(el=>{
+    let key = el.dataset.price;
+    let val = prices[key];
+    let prefix = (key.includes('garden')||key.includes('spring')) ? 'From R' : 'R';
+    el.textContent = prefix + val;
+  });
+  for(let k in prices){ let inp=document.getElementById('edit-'+k); if(inp) inp.value=prices[k]; }
+}
+function savePrices(){
+  for(let k in prices){ let inp=document.getElementById('edit-'+k); if(inp) prices[k]=inp.value; }
+  localStorage.setItem('jj_prices', JSON.stringify(prices));
+  renderPrices();
+  alert('Prices Saved! Layout not changed.');
+}
+renderPrices();
+</script>
+
+</body>
+</html>
